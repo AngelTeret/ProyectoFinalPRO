@@ -83,11 +83,15 @@
                                   <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
                                   <Component id="btnRegistrar" min="-2" pref="216" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtPass" max="32767" attributes="0"/>
-                                  <Component id="txtCorreo" max="32767" attributes="0"/>
-                                  <Component id="txtApellido" max="32767" attributes="0"/>
-                                  <Component id="txtNombre" min="-2" pref="390" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="txtPass" max="32767" attributes="0"/>
+                                      <Component id="txtCorreo" max="32767" attributes="0"/>
+                                      <Component id="txtApellido" max="32767" attributes="0"/>
+                                      <Component id="txtNombre" min="-2" pref="390" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="lbMostrar" min="-2" pref="45" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -96,7 +100,7 @@
                           <Component id="jLabel5" min="-2" pref="146" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="305" max="32767" attributes="0"/>
+                  <EmptySpace pref="254" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -117,7 +121,10 @@
                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Component id="txtCorreo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="txtPass" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="lbMostrar" max="32767" attributes="0"/>
+                      <Component id="txtPass" max="32767" attributes="0"/>
+                  </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Component id="btnRegistrar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="61" max="32767" attributes="0"/>
@@ -256,6 +263,11 @@
               <Image iconType="3" name="/Componentes/011user_101500.png"/>
             </Property>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbMostrar">
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lbMostrarMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
