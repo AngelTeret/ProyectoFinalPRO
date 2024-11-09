@@ -319,19 +319,19 @@ public class FormLogin extends javax.swing.JFrame {
 
     private void lbMostrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbMostrarMouseClicked
         // TODO add your handling code here:
-        if (txtPass.getEchoChar() == '\u2022') { // Si la contraseña está oculta
-            txtPass.setEchoChar((char) 0); // Muestra la contraseña
+        if (txtPass.getEchoChar() == '\u2022') { 
+            txtPass.setEchoChar((char) 0); 
             ImageIcon icono = new ImageIcon(getClass().getResource("/Componentes/cerrado.png"));
             Image imagen = icono.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
             lbMostrar.setIcon(new ImageIcon(imagen));
-            lbMostrar.revalidate(); // Asegura que el JLabel se refresque
+            lbMostrar.revalidate(); 
             lbMostrar.repaint();
         } else {
-            txtPass.setEchoChar('\u2022'); // Oculta la contraseña
+            txtPass.setEchoChar('\u2022'); 
             ImageIcon icono = new ImageIcon(getClass().getResource("/Componentes/abierto.png"));
             Image imagen = icono.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
             lbMostrar.setIcon(new ImageIcon(imagen));
-            lbMostrar.revalidate(); // Asegura que el JLabel se refresque
+            lbMostrar.revalidate(); 
             lbMostrar.repaint();
         }
     }//GEN-LAST:event_lbMostrarMouseClicked
